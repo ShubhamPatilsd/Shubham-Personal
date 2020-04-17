@@ -1,80 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0c86e58-42cb-4d44-b894-ad3086f80433" name="Default Changelist" comment="" />
+    <list default="true" id="fc018b16-f6b8-4cbc-bceb-4bda69fa67ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moreproblemsthatihate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moreproblemsthatihate.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1aSDWDm5JjGmAUShHLitdMngmHP" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="moreproblemsthatihate" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0c86e58-42cb-4d44-b894-ad3086f80433" name="Default Changelist" comment="" />
-      <created>1586720130174</created>
+      <changelist id="fc018b16-f6b8-4cbc-bceb-4bda69fa67ae" name="Default Changelist" comment="" />
+      <created>1586730130845</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586720130174</updated>
+      <updated>1586730130845</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1398" height="266" key="GridCell.Tab.0.bottom" timestamp="1586728446307">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1586728446307" />
-    <state width="1398" height="266" key="GridCell.Tab.0.center" timestamp="1586728446306">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1586728446306" />
-    <state width="1398" height="266" key="GridCell.Tab.0.left" timestamp="1586728446305">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1586728446305" />
-    <state width="1398" height="266" key="GridCell.Tab.0.right" timestamp="1586728446306">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1586728446306" />
-    <state width="1398" height="266" key="GridCell.Tab.1.bottom" timestamp="1586728446308">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1586728446308" />
-    <state width="1398" height="266" key="GridCell.Tab.1.center" timestamp="1586728446307">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1586728446307" />
-    <state width="1398" height="266" key="GridCell.Tab.1.left" timestamp="1586728446307">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1586728446307" />
-    <state width="1398" height="266" key="GridCell.Tab.1.right" timestamp="1586728446308">
-      <screen x="0" y="23" width="1440" height="829" />
-    </state>
-    <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1586728446308" />
   </component>
 </project>
