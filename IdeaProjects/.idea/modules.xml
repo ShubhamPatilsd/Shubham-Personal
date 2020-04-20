@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Array Reverse/Array Reverse.iml" filepath="$PROJECT_DIR$/Array Reverse/Array Reverse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Backwards/Backwards.iml" filepath="$PROJECT_DIR$/Backwards/Backwards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ByteShortIntLong/ByteShortIntLong.iml" filepath="$PROJECT_DIR$/ByteShortIntLong/ByteShortIntLong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class/Class.iml" filepath="$PROJECT_DIR$/Class/Class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Consonant Counter/Consonant Counter.iml" filepath="$PROJECT_DIR$/Consonant Counter/Consonant Counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Converter/Converter.iml" filepath="$PROJECT_DIR$/Converter/Converter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encrypting/Encrypting.iml" filepath="$PROJECT_DIR$/Encrypting/Encrypting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FloatAndDouble/FloatAndDouble.iml" filepath="$PROJECT_DIR$/FloatAndDouble/FloatAndDouble.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUIcoolness/GUIcoolness.iml" filepath="$PROJECT_DIR$/GUIcoolness/GUIcoolness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GettersandSetters/GettersandSetters.iml" filepath="$PROJECT_DIR$/GettersandSetters/GettersandSetters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graphics/Graphics.iml" filepath="$PROJECT_DIR$/Graphics/Graphics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello World/Hello World.iml" filepath="$PROJECT_DIR$/Hello World/Hello World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Importing/Importing.iml" filepath="$PROJECT_DIR$/Importing/Importing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Methods/Methods.iml" filepath="$PROJECT_DIR$/Methods/Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberProcessing/NumberProcessing.iml" filepath="$PROJECT_DIR$/NumberProcessing/NumberProcessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OurfirstGui/OurfirstGui.iml" filepath="$PROJECT_DIR$/OurfirstGui/OurfirstGui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice1/Practice1.iml" filepath="$PROJECT_DIR$/Practice1/Practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReverseArray2/ReverseArray2.iml" filepath="$PROJECT_DIR$/ReverseArray2/ReverseArray2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Time/Time.iml" filepath="$PROJECT_DIR$/Time/Time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Variables/Variables.iml" filepath="$PROJECT_DIR$/Variables/Variables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vowel counter/Vowel counter.iml" filepath="$PROJECT_DIR$/Vowel counter/Vowel counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adding/adding.iml" filepath="$PROJECT_DIR$/adding/adding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addingstuff/addingstuff.iml" filepath="$PROJECT_DIR$/addingstuff/addingstuff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moreproblemsthatihate/moreproblemsthatihate.iml" filepath="$PROJECT_DIR$/moreproblemsthatihate/moreproblemsthatihate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smallestnumber/smallestnumber.iml" filepath="$PROJECT_DIR$/smallestnumber/smallestnumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sum of digits/sum of digits.iml" filepath="$PROJECT_DIR$/sum of digits/sum of digits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weird java/weird java.iml" filepath="$PROJECT_DIR$/weird java/weird java.iml" />
     </modules>
   </component>
 </project>

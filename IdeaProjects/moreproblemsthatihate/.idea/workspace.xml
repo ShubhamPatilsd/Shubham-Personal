@@ -19,9 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f0c86e58-42cb-4d44-b894-ad3086f80433" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="fc018b16-f6b8-4cbc-bceb-4bda69fa67ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moreproblemsthatihate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/moreproblemsthatihate.iml" afterDir="false" />
+>>>>>>> 8a2ef2fcc34c2fd5a3b06827028f87092c48563f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +42,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1aSDWDm5JjGmAUShHLitdMngmHP" />
+=======
+>>>>>>> 8a2ef2fcc34c2fd5a3b06827028f87092c48563f
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -59,20 +74,24 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+=======
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+>>>>>>> 8a2ef2fcc34c2fd5a3b06827028f87092c48563f
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f0c86e58-42cb-4d44-b894-ad3086f80433" name="Default Changelist" comment="" />
-      <created>1586720130174</created>
+      <changelist id="fc018b16-f6b8-4cbc-bceb-4bda69fa67ae" name="Default Changelist" comment="" />
+      <created>1586730130845</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586720130174</updated>
+      <updated>1586730130845</updated>
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -122,4 +141,6 @@
     </state>
     <state width="1398" height="266" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1586728446308" />
   </component>
+=======
+>>>>>>> 8a2ef2fcc34c2fd5a3b06827028f87092c48563f
 </project>
