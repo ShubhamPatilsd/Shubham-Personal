@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MovingCharacter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MovingCharacter_jar</output-path>
+    <root id="archive" name="MovingCharacter.jar">
+      <element id="module-output" name="MovingCharacter" />
+    </root>
+  </artifact>
+</component>
