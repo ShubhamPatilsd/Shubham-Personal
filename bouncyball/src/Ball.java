@@ -1,187 +1,128 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.Random;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.util.concurrent.TimeUnit;
 
+public class Ball extends JPanel implements KeyListener {
 
-public class Ball extends JPanel{
-private int x;
-private int y;
-private int cpux=25;
-private int cpuy=y;
-private int velx=15;
-private int vely=15;
-private int playerx;
-private int framey;
-private int middlex;
-private double textsize;
-private int p1score;
-private int p2score;
-private int randomnum;
+    public Ball(){
+        addKeyListener(this);
 
+        setFocusable(true);
+    }
+    private int playerx=100;
+    private int playery=675;
+    private int jumpstrength;
+    private int weight=10;
+    private int floorheight=980;
+    private boolean onfloor;
+    private final int GRAVITY=1;
+    private int pillarx=800;
+    private int pillary=(int) (Math.random()*1080);
+    private int secondpillar;
+    private boolean up=false;
 
+    public void paintComponent(Graphics g){
 
-private int mousey;
-private Random rd=new Random();
+        super.paintComponent(g);
 
+        g.setColor(Color.LIGHT_GRAY);
+        g.fillRect(0,floorheight,1920,100);
 
+        g.setColor(Color.BLACK);
+        g.fillRect(playerx,playery,30,30);
 
-private boolean right=false;
-private boolean down=false;
-private boolean startingcheck=false;
-private boolean checking=false;
-private boolean haschecked=false;
-
-
-public Ball(){
-   // System.out.println(x+" "+y);
-    //addMouseListener(this);
-}
-
-public void paintComponent(Graphics g){
-
-    super.paintComponent(g);
-
-    g.setColor(Color.BLACK);
-    g.fillRect(x,y,30,30);
-    g.fillRect(cpux,cpuy,50,150);
-    g.fillRect(playerx,mousey,50,150);
-    Font font=new Font("Helvetica", Font.BOLD, (int) textsize);
-    g.setFont(font);
-    g.drawString(String.valueOf(p2score),middlex-100,40);
-    g.drawString(String.valueOf(p1score),middlex+100,40);
-    Graphics2D g2d=(Graphics2D)g;
-    Stroke stroke=new BasicStroke(5f);
-    g2d.setStroke(stroke);
-    g2d.drawLine(middlex,0,middlex,framey);
-
-    //g.drawLine(startinglinex,startingliney,endingx,endingy);
-
-}
+        g.setColor(Color.GREEN);
+        g.fillRect(pillarx,pillary,70,580);
+        if(pillary<=1080/2){
+            secondpillar=pillary+700;
+        }else{
+            secondpillar=pillary-700;
+        }
+        g.fillRect(pillarx,secondpillar,70,580);
 
 
-public void movearound(JFrame f) {
-    textsize=f.getHeight()*f.getWidth()/43000;
 
-    middlex=f.getWidth()/2;
-    framey=f.getHeight();
-    playerx=f.getWidth()-75;
-    PointerInfo point=MouseInfo.getPointerInfo();
-    Point mouses=point.getLocation();
-    mousey=(int) mouses.getY();
-    if(mousey>f.getHeight()-150){
-        mousey=f.getHeight()-150;
-
+        setBackground(Color.CYAN);
     }
 
-
-    if(!startingcheck){
-        x=(int)(Math.random()*(f.getWidth()+1));
-        y=(int)(Math.random()*(f.getHeight()+1));
-        startingcheck=true;
-    }
+public void movearound(JFrame frame) {
     try {
-
         TimeUnit.MILLISECONDS.sleep(5);
-        if(mousey==y){
-            //System.out.println(mousey+" "+y);
+        if(up){
+          playery-=GRAVITY;
+        }else{
+            playery+=GRAVITY;
         }
-        if((x==playerx-30) && (y>=mousey && y<=mousey+150)){
-
-            right=false;
-
+        if(playery>=floorheight-25){
+            playery=floorheight-25;
+            onfloor=true;
         }
-
-        if(x==cpux+30){
-            TimeUnit.MILLISECONDS.sleep(150);
-            p1score++;
-            right=true;
+        if(playery<floorheight-25){
+            onfloor=false;
         }
-        if(right){
-            x++;
-        }
-        if(!right){
-            x--;
-        }
-
-
-
-        if(down){
-            y++;
-        }
-        if(!down){
-            y--;
-        }
-
-
-
-
-        if(x<=0){
-
-            x=30;
-            right=true;
-            p1score++;
-        }
-
-
-        if(x>f.getWidth() || ((x==playerx) && (y != mousey))){
-            TimeUnit.MILLISECONDS.sleep(150);
-            x=playerx-30;
-            right=false;
-            p2score++;
-        }
-
-
-
-        if(y<0){
-            y=30;
-            down=true;
-        }
-        if(y>f.getHeight()-30){
-            y=f.getHeight()-30;
-            down=false;
-        }
-        if(!haschecked && x>middlex){
-            checking=rd.nextBoolean();
-            //System.out.println(checking);
-            haschecked=true;
-        }
-        if(x<=middlex){
-            if(haschecked==true){
-                haschecked=false;
+        if(pillarx<0){
+            pillarx=1900;
+            System.out.println(pillary);
+            if(pillary<600){
+                pillary=(int) (Math.random()*1080);
             }
-            if(checking){
-                cpuy=y+randomnum;
-
-            }else{
-                if(cpuy>=f.getHeight()){
-                    cpuy--;
-                }else if(cpuy<=0){
-                    cpuy++;
-                }
+            if( pillary>=600){
+                pillary=(int) (Math.random()*700);
             }
-        }
-
-
-        if(cpuy>f.getHeight()-150){
-            cpuy=f.getHeight()-150;
 
         }
+        pillarx--;
+        //playerx++;
 
-        if(mousey>f.getHeight()-150){
-            mousey=f.getHeight()-150;
-
-        }
     }catch(Exception e){
-        e.printStackTrace();
+      e.printStackTrace();
     }
 
-repaint();
-}
+    repaint();
+    }
+
+    @Override
+    public void keyTyped(KeyEvent keyEvent) {
+        //System.out.println(keyEvent.getKeyCode());
+
+          if(keyEvent.getKeyCode()==32){
+            up=true;
+          }else{
+            up=false;
+          }
 
 
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+    @Override
+    public void keyPressed(KeyEvent keyEvent) {
+        if(keyEvent.getKeyCode()==32){
+            up=true;
+        }else{
+          up=false;
+        }
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent keyEvent) {
+        if(keyEvent.getKeyCode()==32){
+          up=false;
+        }else{
+
+        }
+    }
 }
