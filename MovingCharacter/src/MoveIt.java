@@ -5,7 +5,7 @@ public class MoveIt {
         JFrame frame=new JFrame("Move it");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //frame.setFocusable(true);
-        frame.setResizable(true);
+        frame.setResizable(false);
         sickmoves s=new sickmoves();
         frame.add(s);
         frame.setSize(800,750);
