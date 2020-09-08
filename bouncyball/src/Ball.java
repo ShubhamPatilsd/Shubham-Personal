@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.concurrent.TimeUnit;
+import java.util.Random;
 
 public class Ball extends JPanel implements KeyListener {
 
@@ -19,13 +20,16 @@ public class Ball extends JPanel implements KeyListener {
     private boolean onfloor;
     private final int GRAVITY=1;
     private int pillarx=800;
-    private int pillary=(int) (Math.random()*1080);
+    private int pillary=0;
     private int secondpillar;
     private boolean up=false;
+    private Random rand=new Random();
+    private int firstpillarheight=rand.nextInt((550 - 100) + 1) + 100;
 
     public void paintComponent(Graphics g){
 
         super.paintComponent(g);
+
 
         g.setColor(Color.LIGHT_GRAY);
         g.fillRect(0,floorheight,1920,100);
@@ -34,13 +38,9 @@ public class Ball extends JPanel implements KeyListener {
         g.fillRect(playerx,playery,30,30);
 
         g.setColor(Color.GREEN);
-        g.fillRect(pillarx,pillary,70,580);
-        if(pillary<=1080/2){
-            secondpillar=pillary+700;
-        }else{
-            secondpillar=pillary-700;
-        }
-        g.fillRect(pillarx,secondpillar,70,580);
+        g.fillRect(pillarx,pillary,70,firstpillarheight);
+        secondpillar=(firstpillarheight)+100;
+        g.fillRect(pillarx,secondpillar,70,595);
 
 
 
@@ -65,12 +65,8 @@ public void movearound(JFrame frame) {
         if(pillarx<0){
             pillarx=1900;
             System.out.println(pillary);
-            if(pillary<600){
-                pillary=(int) (Math.random()*1080);
-            }
-            if( pillary>=600){
-                pillary=(int) (Math.random()*700);
-            }
+            firstpillarheight=rand.nextInt((550 - 100) + 1) + 100;
+
 
         }
         pillarx--;
@@ -89,6 +85,7 @@ public void movearound(JFrame frame) {
 
           if(keyEvent.getKeyCode()==32){
             up=true;
+
           }else{
             up=false;
           }
