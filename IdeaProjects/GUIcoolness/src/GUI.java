@@ -67,6 +67,7 @@ public class GUI implements ActionListener {
 
         if (user.equals("shubhampatilsd@gmail.com") && password.equals("fremont123")){
             success.setText("Login Successful!");
+            
             button.setVisible(false);
         }else{
             success.setText("Login Failed.");
