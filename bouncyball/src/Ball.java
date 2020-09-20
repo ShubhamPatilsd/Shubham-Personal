@@ -34,7 +34,7 @@ public class Ball extends JPanel implements KeyListener {
     private int fourthpillarheight;
     private boolean gameover;
     private boolean userinput=true;
-    private int gametextx;
+
     private int score=0;
     private boolean happened=true;
     private int fourthpillar;
@@ -47,8 +47,9 @@ public class Ball extends JPanel implements KeyListener {
 
 
 
-        g.setColor(Color.BLACK);
+        g.setColor(Color.YELLOW);
         g.fillRect(playerx,playery,20,20);
+        g.setColor(Color.black);
         Font scorefont=new Font("Helvetica",Font.PLAIN,36);
         g.setFont(scorefont);
         g.drawString(String.valueOf(score),765,35);
@@ -93,7 +94,7 @@ public class Ball extends JPanel implements KeyListener {
 public void movearound(JFrame frame) {
 
         if(gameover){
-            gametextx=400;
+
             playerx=2000;
             playery=0;
             repaint();
@@ -111,8 +112,8 @@ public void movearound(JFrame frame) {
         }else{
             playery+=GRAVITY;
         }
-        if(playery>=floorheight-14){
-            playery=floorheight-14;
+        if(playery>=floorheight-20){
+            playery=floorheight-20;
 
         }
 
@@ -135,10 +136,21 @@ public void movearound(JFrame frame) {
 
         }
 
+//newpillarx=pillarx and newpillary=pillary
+
+	if(((playerx<=newpillarx&&playerx>=newpillarx-10) && playery>=0 && playery<=thirdpillarheight+2) || ((playerx<=newpillarx&&playerx>=newpillarx-10) &&(playery<=600 && playery>=600-fourthpillarheight+2))){
+            TimeUnit.MILLISECONDS.sleep(200);
+           gameover=true;
+            userinput=false;
+
+        }
+       
+
 
         pillarx--;
         if(newpillars){
             newpillarx--;
+
         }
         //playerx++;
 
@@ -167,26 +179,33 @@ public void movearound(JFrame frame) {
           }
 
         if(keyEvent.getKeyChar()=='p' && gameover){
-            playerx=42;
+             playerx=42;
             //private int playery=675;
-              playery=375;
+             playery=375;
 
             //private int floorheight=980;
-              floorheight=544;
+            floorheight=544;
 
 
              pillarx=556;
-            pillary=0;
+             newpillarx=0;
+             newpillary=0;
+             pillary=0;
              secondpillar=0;
-             up=false;
+            up=false;
+            Random rand=new Random();
+            firstpillarheight=rand.nextInt((306 - 56) + 1) + 56;
+            thirdpillarheight=rand.nextInt((306 - 56) + 1) + 56;
+            secondpillarheight=0;
+            fourthpillarheight=0;
+            gameover=false;
+            userinput=true;
 
-             firstpillarheight=rand.nextInt((306 - 56) + 1) + 56;
-             secondpillarheight=0;
-             gameover=false;
-             userinput=true;
-             gametextx=0;
-             score=0;
-             happened=true;
+            score=0;
+            happened=true;
+            fourthpillar=0;
+            newpillars=false;
+
 
 
         }
